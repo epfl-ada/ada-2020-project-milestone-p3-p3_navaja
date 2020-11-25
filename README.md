@@ -10,4 +10,5 @@ Propose and analyze a different dataset with which you could answer similar ques
 * Predict other wars...
 
 Propose answering additional research questions with the dataset used in the paper:
+* Could take countries that had civil wars --> try to predict if it will happen the next year given data on previous years (RNNs)? 
 
