@@ -48,18 +48,18 @@ Finishing the analysis, writing the data story, cleaning code and figures, prepa
 * In Week 3, Neil will clean the code, while Victor prepares the data story and Julie focuses on preparing the video summary.
 
 ## References
-<a id="1">[1]</a> Pettersson, Therése, and Magnus Öberg. "Organized violence, 1989–2019." _Journal of peace research_ 57, no. 4 (2020): 597-613.
+<a id="1">[1]</a> Pettersson, T., & Öberg, M. (2020). Organized violence, 1989–2019. _Journal of peace research_, 57(4), 597-613.
 
-<a id="2">[2]</a> Fearon, James D., and David D. Laitin. "Ethnicity, insurgency, and civil war." _American political science review_ (2003): 75-90.
+<a id="2">[2]</a> Fearon, J. D., & Laitin, D. D. (2003). Ethnicity, insurgency, and civil war. _American political science review_, 75-90.
 
-<a id="3">[3]</a> Collier, Paul, and Anke Hoeffler. "Greed and grievance in civil war." _Oxford economic papers_ 56, no. 4 (2004): 563-595.
+<a id="3">[3]</a> Collier, P., & Hoeffler, A. (2004). Greed and grievance in civil war. _Oxford economic papers_, 56(4), 563-595.
 
-<a id="4">[4]</a> Hegre, Håvard, and Nicholas Sambanis. "Sensitivity analysis of empirical results on civil war onset." _Journal of conflict resolution_ 50, no. 4 (2006): 508-535.
+<a id="4">[4]</a> Hegre, H., & Sambanis, N. (2006). Sensitivity analysis of empirical results on civil war onset. _Journal of conflict resolution_, 50(4), 508-535.
 
-<a id="5">[5]</a> Muchlinski, David, David Siroky, Jingrui He, and Matthew Kocher. "Comparing random forest with logistic regression for predicting class-imbalanced civil war onset data." _Political Analysis_ (2016): 87-103.
+<a id="5">[5]</a> Muchlinski, D., Siroky, D., He, J., & Kocher, M. (2016). Comparing random forest with logistic regression for predicting class-imbalanced civil war onset data. _Political Analysis_, 87-103.
 
-<a id="6">[6]</a> Paszke, Adam, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen et al. "Pytorch: An imperative style, high-performance deep learning library." In Advances in neural information processing systems, pp. 8026-8037. 2019.
+<a id="6">[6]</a> Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., ... & Desmaison, A. (2019). Pytorch: An imperative style, high-performance deep learning library. In _Advances in neural information processing systems_ (pp. 8026-8037).
 
-<a id="7">[7]</a> Pedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel et al. "Scikit-learn: Machine learning in Python." the Journal of machine Learning research 12 (2011): 2825-2830.
+<a id="7">[7]</a> Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Vanderplas, J. (2011). Scikit-learn: Machine learning in Python. _Journal of machine learning research_, 12, 2825-2830.
 
-<a id="8">[8]</a> Chen, Tianqi, and Carlos Guestrin. "Xgboost: A scalable tree boosting system." In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, pp. 785-794. 2016.
+<a id="8">[8]</a> Chen, T., & Guestrin, C. (2016, August). Xgboost: A scalable tree boosting system. In _Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining_ (pp. 785-794).
