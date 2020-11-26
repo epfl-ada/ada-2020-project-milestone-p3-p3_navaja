@@ -49,10 +49,17 @@ Finishing the analysis, writing the data story, cleaning code and figures, prepa
 
 ## References
 <a id="1">[1]</a> Pettersson, Therése, and Magnus Öberg. "Organized violence, 1989–2019." _Journal of peace research_ 57, no. 4 (2020): 597-613.
+
 <a id="2">[2]</a> Fearon, James D., and David D. Laitin. "Ethnicity, insurgency, and civil war." _American political science review_ (2003): 75-90.
+
 <a id="3">[3]</a> Collier, Paul, and Anke Hoeffler. "Greed and grievance in civil war." _Oxford economic papers_ 56, no. 4 (2004): 563-595.
+
 <a id="4">[4]</a> Hegre, Håvard, and Nicholas Sambanis. "Sensitivity analysis of empirical results on civil war onset." _Journal of conflict resolution_ 50, no. 4 (2006): 508-535.
+
 <a id="5">[5]</a> Muchlinski, David, David Siroky, Jingrui He, and Matthew Kocher. "Comparing random forest with logistic regression for predicting class-imbalanced civil war onset data." _Political Analysis_ (2016): 87-103.
+
 <a id="6">[6]</a> Paszke, Adam, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen et al. "Pytorch: An imperative style, high-performance deep learning library." In Advances in neural information processing systems, pp. 8026-8037. 2019.
+
 <a id="7">[7]</a> Pedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel et al. "Scikit-learn: Machine learning in Python." the Journal of machine Learning research 12 (2011): 2825-2830.
-<a id="8">[8]<.a> Chen, Tianqi, and Carlos Guestrin. "Xgboost: A scalable tree boosting system." In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, pp. 785-794. 2016.
+
+<a id="8">[8]</a> Chen, Tianqi, and Carlos Guestrin. "Xgboost: A scalable tree boosting system." In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, pp. 785-794. 2016.
