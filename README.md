@@ -2,20 +2,20 @@
 
 ## 1. Abstract
 
-In the wake of the Second World War, the world has seen a steady increase in intrastate conflicts [[1]](#1), often with dire consequences for the affected countries. Recent advancements in data science have catalyzed the development of predictive models for various problems, including political conflicts such as civil wars [[2]](#2) [[3]](#3) [[4]](#4). In 2016, Muchlinski _et al._ [[5]](#5) significantly improved previous models of civil war onset. In this project, we first aim at benchmarking these results against other common machine learning algorithms, namely neural networks and gradient boosted trees. As the geographical area was an important feature in the abovementioned study ("Western Europe and US Dummy" in Fig. 4 [[5]](#5)), we will examine whether prediction differs when training separate models for each continent or subregions. Finally, we will explore whether civil war events can be forecast as time series instead of simple regression points, e.g., using autoregressive models.
+In the wake of the Second World War, the world has seen a steady increase in intrastate conflicts [[1]](#1), often with dire consequences for the affected countries. Recent advancements in data science have catalyzed the development of predictive models for various problems, including political conflicts such as civil wars [[2]](#2) [[3]](#3) [[4]](#4). In 2016, Muchlinski _et al._ [[5]](#5) significantly improved previous models of civil war onset. In this project, we first aim at benchmarking these results against other common machine learning algorithms, namely neural networks and gradient boosted trees. As the geographical area was an important feature in the abovementioned study ("Western Europe and US Dummy" in Fig. 4 [[5]](#5)), we will examine whether predictions differ when training separate models for each continent or subregion. Finally, we will explore whether civil war events can be forecast as time series instead of simple regression points, e.g., using autoregressive models.
 
 ## 2. Research questions
-1. How does the Random Forests model from Muchlinski _et al._ [[5]](#5) compare with neural networks and gradient boosted trees in terms of predictive accuracy?
+1. How does the Random Forests model from Muchlinski _et al._ [[5]](#5) compare with neural networks and gradient boosted trees in terms of predictive accuracy and feature importance?
 2. Can spatial separation of civil war data (i.e., by continent or subregion) help improve predictive accuracy of civil war events?
 3. While most analyses have considered civil war onset prediction as regression problems, can these events be forecast as time series? In other words, can we predict civil war onset at a year Y in a given country C given data from previous years {Y-1, Y-2, ...}?
 
 ## 3. Proposed dataset
- * "SambnisImp.csv" from the Muchlinski _et al._ [[5]](#5) paper will be the only dataset used in this project. This dataset corresponds to the Civil War Data (CWD) from 1945 to 2000 [[4]](#4). The response is a binary variable indicating whether a civil war was ongoing for a given country-year. 
+ * "SambnisImp.csv" from the Muchlinski _et al._ [[5]](#5) paper will be the only dataset used in this project. This dataset corresponds to the Civil War Data (CWD) from 1945 to 2000 [[4]](#4). It includes 88 features for 7141 “country-years”. The response is a binary variable indicating whether a civil war was ongoing for a given country-year. 
  
 ## 4. Methods
  ### 4.1. Comparing machine learning algorithms for civil war onset classification.
  #### 4.1.1. Data collection
-We will use the same features than Muchlinski _et al._ [[5]](#5), minus the the features related to geographical area separation (e.g.,  "Western Europe and US Dummy"). Indeed, we will investigate whether the effect of data aggregation by continent or subregion in a subsequent analysis (cf. **4.2**). To ensure a meaningful comparison, the same training and testing sets will be used to assess each tested algorithm.
+We will use the same features than Muchlinski _et al._ [[5]](#5), minus the features related to geographical area separation (e.g.,  "Western Europe and US Dummy"). Indeed, we will investigate the effect of data aggregation by continent/subregion in a subsequent analysis (cf. **4.2**). To ensure a meaningful comparison, the same training and testing sets will be used to assess each tested algorithm.
 
  #### 4.1.2 Models
 The Random Forests model from the paper will be compared with two common machine learning algorithms: multi-layer perceptrons (a "simple" type of neural networks), and gradient boosted decision trees (GBDTs). Whereas multi-layer perceptrons will be implemented using machine learning library PyTorch [[6]](#6) as both more intuitive and flexible than the neural network functions of scikit-learn [[7]](#7), XGBoost will be used as a fast and robust implementation of GDBTs [[8]](#8). 
@@ -27,10 +27,10 @@ Parameter hyperoptimization will be performed using grid search combined with 10
 In the same vein as Muchlinski _et al._ [[5]](#5), both ROC-AUC and F1 scores will be used to evaluate model performance. These metrics are commonly used for binary classification of imbalanced data.
 
  ### 4.2. Effect of spatial data separation
-Following the importance of the "Western Europe and US Dummy" variable in Muchlinski _et al._ [[5]](#5), we will aggregate the data by geographical area (either continent or subregion, to be determined), and see whether predictive accuracy differs when fitting the models separately on each group. The same training paradigm and metrics as in **4.1** will be used. We will then analyze feature importance to see whether different variables can explain better civil war events in different geographical areas.
+Following the importance of the "Western Europe and US Dummy" variable in Muchlinski _et al._ [[5]](#5), we will aggregate the data by geographical area (either continent or subregion, to be determined), and see whether predictive accuracy differs when fitting the models separately on each group. The same training paradigm and metrics as in **4.1** will be used. We will then analyze feature importance (e.g., using Gini scores for tree-based models) to see whether different variables can explain better civil war events in different geographical areas.
 
  ### 4.3. Predicting civil war onset as time series forecasting
-In this section, we will consider that each country is assigned to a time series of civil war/peace events, and see whether civil war events could be forecasted given past data using simple time forecasting models (e.g., autogressors (AR) or ARIMA). 
+In this section, we will consider that each country is assigned to a time series of civil war/peace events, and see whether civil war events could be forecast given past data using simple time forecasting models (e.g., autogressors (AR) or ARIMA). 
  
 ## 5. Proposed timeline
  ### 5.1. Week 1: Implementation of steps 4.1, 4.2
@@ -39,7 +39,7 @@ Downloading the data, implementing the ML models, wrangling/cleaning the dataset
 Finish methods 4.1 and 4.2 if not done.
 Wrangling/cleaning the dataset, implementing and testing recurrent/autoregressive models, and preparing visualizations for task 4.3
  ### 5.3 Week 3: Wrapping up
-Finishing the analysis, writing the data story, cleaning code and figures, preparing video.
+Finishing the analysis, writing the data story, cleaning code and figures, preparing the video.
 
 ## 6. Organization witing the team 
 * Neil will share his code used in Milestone 2 for downloading the data and implementing the Random Forests model of Muchlinski _et al._ [[5]](#5).
